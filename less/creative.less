@@ -48,6 +48,14 @@ p {
 
 .bg-primary {
     background-color: @theme-primary;
+
+    a:not(.btn) {
+        color: @gray-lighter;
+
+        &:hover {
+            color: darken(@gray-lighter, 5%);
+        }
+    }
 }
 
 .bg-dark {

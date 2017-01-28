@@ -1,6 +1,6 @@
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
- * Copyright 2013-2016 Start Bootstrap
+ * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
 html,
@@ -44,6 +44,12 @@ p {
 }
 .bg-primary {
   background-color: #F05F40;
+}
+.bg-primary a:not(.btn) {
+  color: #eeeeee;
+}
+.bg-primary a:not(.btn):hover {
+  color: #e2e2e2;
 }
 .bg-dark {
   background-color: #222222;
