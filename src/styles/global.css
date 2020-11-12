@@ -1,0 +1,150 @@
+:root {
+  --light-blue: #c5d3d9;
+  --blue: #1f8da6;
+  --gray: #736f68;
+  --red: #bf3415;
+  --orange: #d97b29;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  color: #333;
+  font-weight: 400;
+}
+
+a,
+a:visited,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  transition: color 0.25s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  line-height: 1.25;
+  color: inherit;
+  font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-size: 2.441em;
+}
+
+h2 {
+  font-size: 1.953em;
+}
+
+h3 {
+  font-size: 1.563em;
+}
+
+p {
+  font-size: 1rem;
+  max-width: 1100px;
+  margin: 0 auto 1em auto;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+  grid-auto-rows: 100vh;
+  box-sizing: border-box;
+  font-size: 1rem;
+  background-color: #f5f5f5;
+  align-items: center;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.section--alt {
+  background-color: var(--light-blue);
+  color: var(--gray);
+}
+
+.section__row {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::after {
+  content: "";
+  display: block;
+  background-color: var(--red);
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.25s ease-out;
+}
+
+.button:hover::after {
+  width: 100%;
+}
+
+.button__text {
+  position: relative;
+  z-index: 1;
+}
+
+/* ----------
+     Social Icons
+  ---------- */
+
+.socialLink {
+  font-size: 1.953em;
+  margin: 1rem 0.5rem;
+}
+
+.socialLink--twitter:hover {
+  color: #1da1f3;
+}
+
+.socialLink--github:hover {
+  /* color: #6e5494; */
+  color: #4078c0;
+}
